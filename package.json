@@ -1,11 +1,16 @@
 {
   "name": "wp-react-inline-search",
   "version": "1.0.0",
-  "description": "A React component displaying search results from a WordPress REST endpoint.",
+  "description":
+    "A React component displaying search results from a WordPress REST endpoint.",
   "main": "src/js",
   "author": "John Watkins <john.watkins@colby.edu>",
   "license": "MIT",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColbyCommunications/wp-react-inline-search"
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack -p",
