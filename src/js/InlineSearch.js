@@ -75,7 +75,7 @@ class InlineSearch extends React.Component {
       this.setState({ currentPage: 1 }, resolve);
     });
 
-  async maybeSearch({ searchTerm } = this.state) {
+  maybeSearch({ searchTerm } = this.state) {
     if (searchTerm === '') {
       this.closeSearch();
       return;
