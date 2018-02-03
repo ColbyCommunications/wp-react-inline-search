@@ -5,28 +5,18 @@ const StyledPrevNext = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  clear: both;
 `;
 
 const StyledPrevNextButton = styled.button`
   padding: 0.75rem;
-  font-size: 1.5rem;
+  font-size: 150%;
   font-weight: bold;
   background: transparent;
   border: none;
-
-  &:first-of-type {
-    padding: 1.5rem;
-  }
-
-  &:focus,
-  &:hover {
-    text-decoration: none;
-  }
 `;
 
 const StyledLoadingText = styled.div`
-  font-size: 0.891em;
+  font-size: 89.1%;
 `;
 
 export const PrevNext = ({

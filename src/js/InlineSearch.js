@@ -65,9 +65,9 @@ class InlineSearch extends React.Component {
     });
   }
 
-  maybeResetToPageOne = searchTerm =>
+  maybeResetToPageOne = prevSearchTerm =>
     new Promise(resolve => {
-      if (searchTerm === this.state.searchTerm) {
+      if (prevSearchTerm === this.state.searchTerm) {
         resolve();
         return;
       }

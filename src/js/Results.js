@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Result } from './result';
 import { PrevNext } from './PrevNext';
+import { NoResults } from './NoResults';
 
 const StyledResults = styled.div`
   position: absolute;
@@ -77,7 +78,7 @@ export const Results = ({
         .filter(result => result.title && result.title.rendered.length)
         .map(result => <Result key={result.id} {...result} />)
     ) : (
-      <span className="no-results">No results.</span>
+      <NoResults />
     )}
     <PrevNext
       currentPage={currentPage}

@@ -24,7 +24,7 @@ const StyledResult = styled.div`
 
 export const Result = ({ id, link, title }) =>
   title ? (
-    <StyledResult key={id} className="result-item">
+    <StyledResult key={id}>
       <a
         href={link}
         dangerouslySetInnerHTML={{
