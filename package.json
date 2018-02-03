@@ -1,6 +1,6 @@
 {
   "name": "wp-react-inline-search",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A React component displaying search results from a WordPress REST endpoint.",
   "main": "src/js",
   "author": "John Watkins <john.watkins@colby.edu>",
