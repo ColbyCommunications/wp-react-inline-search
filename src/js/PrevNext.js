@@ -11,6 +11,7 @@ const StyledPrevNextButton = styled.button`
   padding: 0.75rem;
   font-size: 150%;
   font-weight: bold;
+  cursor: pointer;
   background: transparent;
   border: none;
 `;

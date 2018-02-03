@@ -17,10 +17,5 @@ const StyledInput = styled.input`
 `;
 
 export const SearchInput = ({ searchTerm, onChange }) => (
-  <StyledInput
-    style={{ cursor: 'pointer' }}
-    value={searchTerm}
-    onChange={onChange}
-    type="search"
-  />
+  <StyledInput value={searchTerm} onChange={onChange} type="search" />
 );

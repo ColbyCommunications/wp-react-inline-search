@@ -81,7 +81,7 @@ class InlineSearch extends React.Component {
       return;
     }
 
-    this.setState({ loading: true }, () => this.search());
+    this.setState({ loading: true }, this.search);
   }
 
   async search({ searchTerm, currentPage } = this.state) {
@@ -91,6 +91,7 @@ class InlineSearch extends React.Component {
     });
 
     if (QUERY_CACHE[url]) {
+      console.log('cached');
       this.setState(Object.assign({}, QUERY_CACHE[url]));
       return;
     }
@@ -109,17 +110,17 @@ class InlineSearch extends React.Component {
     this.setState(newState);
   }
 
-  onSearchTermChange = event => {
+  onSearchTermChange(event) {
     this.setState({ searchTerm: event.target.value });
-  };
+  }
 
-  onPageDown = () => {
+  onPageDown() {
     this.setState({ currentPage: this.state.currentPage - 1 });
-  };
+  }
 
-  onPageUp = () => {
+  onPageUp() {
     this.setState({ currentPage: this.state.currentPage + 1 });
-  };
+  }
 
   render = (
     {
