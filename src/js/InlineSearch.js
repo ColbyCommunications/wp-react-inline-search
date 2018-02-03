@@ -91,7 +91,6 @@ class InlineSearch extends React.Component {
     });
 
     if (QUERY_CACHE[url]) {
-      console.log('cached');
       this.setState(Object.assign({}, QUERY_CACHE[url]));
       return;
     }
