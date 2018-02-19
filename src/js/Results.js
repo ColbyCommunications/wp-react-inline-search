@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Result } from './result';
+import { Result } from './Result';
 import { PrevNext } from './PrevNext';
 import { NoResults } from './NoResults';
 
